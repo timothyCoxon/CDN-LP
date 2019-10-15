@@ -1,3 +1,13 @@
+/**
+ * @Author: Timothy Coxon <timcoxon>
+ * @Date:   10/10/19
+ * @Email:  timothy.coxon@gmail.com
+ * @Last modified by:   timcoxon
+ * @Last modified time: 15/10/19
+ * @License: http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @Copyright: Copyright (c) 2017 Quirkysites.co.uk
+ */
+
 // Version 1.2.1
 
 $(document).ready(function() {
@@ -118,7 +128,7 @@ $(document).ready(function() {
             }
         });
 
-        loadStyleSheet( 'https://cdn.jsdelivr.net/gh/digitaloyster/do-live/ms/ms.css' );
+        loadStyleSheet( 'https://cdn.jsdelivr.net/gh/timothycoxon/CDN-LP/ms/ms.css' );
         if( loadJqueryUi ){
             loadStyleSheet( 'https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css' );
             loadScript( 'https://code.jquery.com/ui/1.12.0/jquery-ui.min.js', datepicker_option );

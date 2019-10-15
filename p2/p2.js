@@ -1,3 +1,13 @@
+/**
+ * @Author: Timothy Coxon <timcoxon>
+ * @Date:   10/10/19
+ * @Email:  timothy.coxon@gmail.com
+ * @Last modified by:   timcoxon
+ * @Last modified time: 15/10/19
+ * @License: http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @Copyright: Copyright (c) 2017 Quirkysites.co.uk
+ */
+
 $(function () {
 
   var searchContext = "",

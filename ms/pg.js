@@ -1,3 +1,13 @@
+/**
+ * @Author: Timothy Coxon <timcoxon>
+ * @Date:   10/10/19
+ * @Email:  timothy.coxon@gmail.com
+ * @Last modified by:   timcoxon
+ * @Last modified time: 15/10/19
+ * @License: http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @Copyright: Copyright (c) 2017 Quirkysites.co.uk
+ */
+
 "use strict";
 var hooks = document.cdnMultiStep.hooks;
 hooks.register(
@@ -15,8 +25,8 @@ hooks.register(
   }
 );
 if( $( document.cdnParameters.progress_bar ).length ){
-  $('head').append('<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/digitaloyster/do-live/ms/pg.css">');
-  var progHeight = $( document.cdnParameters.progress_bar ).height(); 
+  $('head').append('<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/timothycoxon/CDN-LP/ms/pg.css">');
+  var progHeight = $( document.cdnParameters.progress_bar ).height();
   var fontSize =  progHeight / 2 ;
   if( fontSize < 8 ){ fontSize = 8; }
   if( fontSize > 18 ){ fontSize = 18; }
@@ -33,7 +43,7 @@ if( $( document.cdnParameters.progress_bar ).length ){
       var progress = Math.floor( ( Math.round( ( step / num_steps ) * 100 ) / 100 ) * 100 ) + '%';
       //document.getElementById('percent_value').innerHTML = progress;
       document.getElementById('progress').innerHTML = progress;
-      if( step == num_steps){ 
+      if( step == num_steps){
         $('#progress').stop().animate({
           width: progress,
           borderRadius: 4
@@ -42,7 +52,7 @@ if( $( document.cdnParameters.progress_bar ).length ){
       else{
         $('#progress').stop().animate({
           width: progress,
-          borderTopRightRadius: 0, 
+          borderTopRightRadius: 0,
           borderBottomRightRadius: 0
         }, 500);
       }
